@@ -84,8 +84,8 @@ Replace NETWORK valide network of your choice (ex: sepolia or base-sepolia)
 
 ### Deployment Address on sepolia
 
-**AssetRegistration** : [0xe68d853D7881F48d24793ea6761b8A7a6D07fE29](https://sepolia.etherscan.io/address/0xe68d853D7881F48d24793ea6761b8A7a6D07fE29)
-**AssetFractionalization** : [0x5874d6730c0656feA9324dEd6EEa5f7c4501a765](https://sepolia.etherscan.io/address/0x5874d6730c0656feA9324dEd6EEa5f7c4501a765)
-**RegisterAsset** : [RegisterAsset](https://sepolia.etherscan.io/tx/0x5c64c7def008e007acf62036dcbd5b9a5141c1d350f05658977d0611efc49005)
-**FractionalizeAsset** : [fractionalizeAsset](https://sepolia.etherscan.io/tx/0x8d074726f7f11074839c6925bd57c9e5e49377bf8c15d6a16f995b5ea7357cf3)
-**sellAsset** : [sellAsset](https://sepolia.etherscan.io/tx/0xa9a10f07138f569b36af98845de3a42b2b462cf062de59e6c04dd5a1a515538e)
+- **AssetRegistration** : [0xe68d853D7881F48d24793ea6761b8A7a6D07fE29](https://sepolia.etherscan.io/address/0xe68d853D7881F48d24793ea6761b8A7a6D07fE29)
+- **AssetFractionalization** : [0x5874d6730c0656feA9324dEd6EEa5f7c4501a765](https://sepolia.etherscan.io/address/0x5874d6730c0656feA9324dEd6EEa5f7c4501a765)
+- **RegisterAsset** : [RegisterAsset](https://sepolia.etherscan.io/tx/0x5c64c7def008e007acf62036dcbd5b9a5141c1d350f05658977d0611efc49005)
+- **FractionalizeAsset** : [fractionalizeAsset](https://sepolia.etherscan.io/tx/0x8d074726f7f11074839c6925bd57c9e5e49377bf8c15d6a16f995b5ea7357cf3)
+- **sellAsset** : [sellAsset](https://sepolia.etherscan.io/tx/0xa9a10f07138f569b36af98845de3a42b2b462cf062de59e6c04dd5a1a515538e)
