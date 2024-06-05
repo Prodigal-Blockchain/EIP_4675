@@ -8,10 +8,6 @@ Before, ERC20 Token contract should be deployed everytime when fractionalizing a
 
 To solve this problem, this standard proposes a token standard to cover multiple fractionalized nft in a contract without having to deploy each time.
 
-Issue : https://github.com/ethereum/EIPs/issues/4674
-
-PR : https://github.com/ethereum/EIPs/pull/4675
-
 ## How to use
 
 ```
