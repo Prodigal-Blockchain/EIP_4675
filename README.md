@@ -46,6 +46,11 @@ contracts/
 
 Installation
 
+```bash
+git clone https://github.com/Prodigal-Blockchain/EIP_4675.git
+cd EIP_4675
+```
+
 ```
 npm install
 ```
