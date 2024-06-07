@@ -8,17 +8,18 @@ async function main() {
   const provider = new ethers.JsonRpcProvider(process.env.RPC_URL);
   console.log(ownerPrivateKey, provider);
   const owner = new ethers.Wallet(ownerPrivateKey, provider);
-  //Deploy WETH contract
+  //Deploy AssetRegistration  contract
   const NFT = await ethers.getContractFactory("AssetRegistration");
   const NFTArtifact = await NFT.deploy("Test", "TST");
   await NFTArtifact.waitForDeployment();
   console.log("NFT:", NFTArtifact.target);
 
+  //Deploy AssetFractionalization contract
   const MFNFT = await ethers.getContractFactory("AssetFractionalization");
   const MFNFTArtifact = await MFNFT.deploy();
   await MFNFTArtifact.waitForDeployment();
   console.log("MFNFT:", MFNFTArtifact.target);
-  //Verify all Contracts
+
   //Register Asset
 
   const regTx = await NFTArtifact.connect(provider).registerAsset("Asset1");
@@ -28,6 +29,7 @@ async function main() {
     MFNFTArtifact.address,
     "1"
   );
+  //In order to fractionalize the owner ship of the asset(TokenID is transferred to Asset Fractionalizaiton)
   //fractionalize the ownership of the asset with total supply of 10000
   const frTx = await MFNFTArtifact.connect(provider).fractionalizeAsset(
     NFTArtifact.address,
@@ -43,7 +45,7 @@ async function main() {
     "1",
     "100"
   );
-  //In order to fractionalize the owner ship of the asset(TokenID is transferred to Asset Fractionalizaiton)
+  //Verify the contracts
   await hre.run("verify:verify", {
     address: NFTArtifact.target,
     constructorArguments: ["Test", "TST"],
